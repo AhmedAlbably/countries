@@ -1,0 +1,134 @@
+:root {
+  --section-color: hsl(0, 0%, 98%);
+  --header-color: hsl(0, 0%, 100%);
+  --input-search: hsl(0, 0%, 100%);
+  --select-search: hsl(0, 0%, 100%);
+  --font-color: hsl(200, 15%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  overflow-x: hidden;
+  background-color: var(--section-color);
+  color: var(--font-color);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--section-color);
+}
+
+@media (max-width: 800px) {
+  .search {
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  background-color: var(--header-color);
+}
+
+@media (max-width: 800px) {
+  header h2{
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+.mode {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .mode {
+    font-size: 16px;
+    gap:10px;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 60px;
+  background-color: var(--select-search);
+  color: var(--font-color);
+}
+
+.search select {
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--select-search);
+  color: var(--font-color);
+}
+
+.cities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: var(--section-color);
+  color: var(--font-color);
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--select-search);
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+
+
